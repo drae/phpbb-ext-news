@@ -1,0 +1,32 @@
+<section class="news">
+	<svg class="starfield-gradient">
+		<defs>
+			<linearGradient id="alphaLinear" x1="0%" y1="0%" x2="0%" y2="100%">
+				<stop offset="33%" stop-color="#ffffff" stop-opacity="100%" />
+				<stop offset="100%" stop-color="#000000" stop-opacity="0%" />
+			</linearGradient>
+
+			<mask id="Mask">
+				<rect x="0" y="0" width="100%" height="200" fill="url(#alphaLinear)"  />
+			</mask>
+		</defs>
+
+		<image href="/styles/aquila/theme/images/banner/starfield.jpg" x="0" y="0" width="100%" height="200" preserveAspectRatio="xMinYMin slice" mask="url(#Mask)"/>
+	</svg>
+
+	<a id="page-news"></a>
+
+	<div class="news-item" style="background-image:url('{SCREENSHOT}');"><!--  -->
+		<div class="container">
+			<div class="news-item-content">
+				<div>
+					<h1>{NEWS_TITLE}</h1>
+
+					<p class="text-justify">{NEWS_POST}</p>
+
+					<p><a class="cc-druid" href="#">Monopedia</a> <i>on</i> 17<sup>th</sup> September 2017</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,9 @@
+services:
+    numeric.news.listener:
+        class: numeric\news\event\main_listener
+        arguments:
+            - '@controller.helper'
+            - '@dbal.conn'
+            - '@template'
+        tags:
+            - { name: event.listener }
